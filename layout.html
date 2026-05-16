@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout</title>
+  <link rel="stylesheet" href="layout.css">
+</head>
+
+<body>
+  <h2>⋆. 𐙚˚࿔ Pilih Layout yang Diinginkan 𝜗𝜚˚⋆</h2>
+  <p>Pilih salah satu layout</p>
+
+  <div class="container">
+    <div class="card-a" onclick="pilihlayout('A')">
+      <img src="gambar1.jpeg">
+      <p>Layout A (1 foto)</p>
+    </div>
+
+    <div class="card-b" onclick="pilihlayout('B')">
+      <img src="gambar2.jpeg">
+      <img src="gambar1.jpeg">
+      <p>Layout B (2 FOTO)</p>
+    </div>
+
+    <div class="card-c" onclick="pilihlayout('C')">
+      <img src="gambar3.jpeg">
+      <img src="gambar2.jpeg">
+      <img src="gambar1.jpeg">
+      <img src="gambar3.jpeg">
+      <div class="label">
+        <p class="title">Layout C (4 Foto)</p>
+      </div>
+    </div>
+
+
+    <div id="hasilLayout" class="photo-strip"></div>
+
+
+
+    
+  <script>
+
+      function pilihlayout(layout) {
+        window.location.href = "kamera.html?layout=" + layout;
+      }
+
+    </script>
+</body>
+
+</html>

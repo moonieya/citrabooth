@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Photobooth</title>
+    <link rel="stylesheet" href="hasil.css">
+</head>
+
+<body>
+
+    <h2>𐙚˚࿔ Hasil Foto𝜗𝜚˚⋆</h2><br>
+
+    <div class="container">
+
+        <canvas id="canvas"></canvas>
+
+        <div class="controls">
+            <font style="font-size: 18px; font-weight: bold; color: #3d2f30;">FILTER</font><br><br><br>
+
+            <label class="label-row">Brightness <span id="valBrightness">0%</span></label>
+            <input type="range" id="brightness" min="-100" max="100" value="0">
+
+            <label class="label-row">Contrast <span id="valContrast">0%</span></label>
+            <input type="range" id="contrast" min="-100" max="100" value="0">
+
+            <label class="label-row">Saturation <span id="valSaturation">0%</span></label>
+            <input type="range" id="saturation" min="-100" max="100" value="0">
+
+            <label class="label-row">Temperature <span id="valTemperature">0%</span></label>
+            <input type="range" id="temperature" min="-100" max="100" value="0">
+
+            <label class="label-row">Exposure <span id="valExposure">0%</span></label>
+            <input type="range" id="exposure" min="-100" max="100" value="0">
+
+            <label class="label-row">Translasi X <span id="valTx">0%</span></label>
+            <input type="range" id="tx" min="-100" max="100" value="0">
+
+            <label class="label-row">Translasi Y <span id="valTy">0%</span></label>
+            <input type="range" id="ty" min="-100" max="100" value="0">
+
+            <label class="label-row">Rotate <span id="valRotate">0°</span></label>
+            <input type="range" id="rotate" min="-180" max="180" value="0">
+
+            <label class="label-row">Scale <span id="valScale">0%</span></label>
+            <input type="range" id="scale" min="-100" max="100" value="0">
+
+            <label class="label-row">Grayscale <span id="valGray">0%</span></label>
+            <input type="range" id="grayscale" min="-100" max="100" value="0">
+
+            <label class="label-row">Biner <span id="valBiner">0</span></label>
+            <input type="range" id="biner" min="-127" max="127" value="0">
+
+            <button onclick="downloadFoto()">Download</button>
+            <button onclick="ulang()">Ulang Foto</button>
+        </div>
+
+    </div>
+
+    <script src="hasil.js"></script>
+
+</body>
+
+</html>

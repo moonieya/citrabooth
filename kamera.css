@@ -1,0 +1,84 @@
+body {
+    font-family: Arial;
+    background: #f8d7da;
+    margin: 0;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    background: #eee;
+    padding: 25px;
+    border-radius: 20px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+video {
+    width: 100%;
+    border-radius: 15px;
+}
+
+button:not(#next) {
+    margin: 8px;
+    padding: 10px 15px;
+    border: none;
+    background: #e7bcbc;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+button:not(#next):hover {
+    background: #e8b7bb;
+    transform: scale(1.15);
+}
+
+button:not(#next):active {
+    transform: scale(1);
+    background: #dca4a8;
+}
+
+.custom-upload {
+    transition: all 0.4s ease;
+}
+
+.custom-upload:hover {
+    background: #e8b7bb;
+    transform: scale(1.15);
+}
+
+.custom-upload:active {
+    transform: scale(1);
+    background: #dca4a8;
+}
+
+#next {
+    margin: 8px;
+    padding: 10px 15px;
+    border: none;
+    background: #e7bcbc;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.custom-upload {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #e7bcbc;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamera</title>
+    <link rel="stylesheet" href="kamera.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2> Kamera / Upload Foto</h2>
+        <video id="video" autoplay playsinline></video>
+        <div id="countdown"></div>
+        <br>
+        <button onclick="mulaiFoto()">Ambil Gambar</button>
+        <button onclick="ulang()">Ulang</button>
+        <br><br>
+        <label for="upload" class="custom-upload">Unggah Foto</label>
+        <input type="file" id="upload" accept="image/*" hidden>
+        <p id="infoUpload"></p>
+        <button id="next" onclick="kirimKeHasil()" disabled>Next</button>
+    </div>
+
+    <script src="kamera.js"></script>
+
+</body>
+</html>

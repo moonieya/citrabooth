@@ -1,0 +1,114 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #f1cccf, #ffffff);
+    display: flex;
+    flex-direction: column;
+}
+
+/* NAVBAR */
+nav {
+    text-align: center;
+    margin: 20px 0;
+}
+
+nav a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background: #181717;
+    transition: 0.3s;
+}
+
+nav a:hover::after,
+nav a.active::after {
+    width: 100%;
+}
+
+/* CONTAINER */
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CARD */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* TITLE */
+.card h2 {
+    margin-bottom: 5px;
+}
+
+.card p {
+    font-size: 13px;
+    color: gray;
+}
+
+/* BUTTON SOSMED */
+.sosmed {
+    margin-top: 20px;
+}
+
+.sosmed a {
+    display: block;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* WARNA TIAP SOSMED */
+.ig {
+    background: #f7c0c5;
+}
+
+.wa {
+    background: #f7c0c5;
+}
+
+.email {
+    background: #f7c0c5;
+}
+
+/* HOVER */
+.sosmed a:hover {
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+    background: #f1cccf;
+    padding: 12px;
+    font-size: 12px;
+    color: gray;
+    text-align: center;
+    border-top: 1px solid #e0aeb3;
+}
